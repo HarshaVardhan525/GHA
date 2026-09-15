@@ -1,0 +1,26 @@
+name: "Push_workflow"
+on:
+    push:
+        branches:
+            - main
+            - dev
+            - qa
+            - prod
+    pull_request:
+        branches:
+            - main
+            - release-*
+    workflow_dispatch:
+    schedule:
+        - cron: '0 9 * * *'
+
+jobs:
+    first-job: 
+        runs-on: ubuntu-latest
+        steps:
+            - name: Print Greetings
+              run: echo "Welcome to Blinkit"
+            - name: Print Goodbye
+              run: |
+                   echo "Go to cart"
+                   echo "Order placed Successfully"
