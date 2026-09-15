@@ -1,4 +1,4 @@
-name: "Push_workflow"
+name: "Push_Pull_Schedule_workflow"
 on:
     push:
         branches:
