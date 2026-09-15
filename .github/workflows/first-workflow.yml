@@ -9,6 +9,7 @@ jobs:
             - name: Print Greetings
               run: echo "Hellow world"
             - name: Print Goodbye
-              run: echo "This is my GHA"
+              run: |
+                   echo "This is my GHA"
                    echo "Workflow executed successfully"
 
