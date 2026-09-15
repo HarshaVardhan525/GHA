@@ -11,5 +11,5 @@ jobs:
               run: echo "Welcome to Blinkit"
             - name: Print Goodbye
               run: |
-                   echo ""Go to cart"
+                   echo "Go to cart"
                    echo "Order placed Successfully"
