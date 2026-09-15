@@ -1,0 +1,14 @@
+#======================================strucutre of gha pipeline================================================
+
+name: First_GHAWorkflow
+on: workflow_dispatch
+jobs:
+    first-job: 
+        runs-on: ubuntu-latest
+        steps:
+            - name: Print Greetings
+              run: echo "Hellow world"
+            - name: Print Goodbye
+              run: echo "This is my GHA"
+                   echo "Workflow executed successfully"
+
